@@ -13,11 +13,24 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   color: #ecf0f1;
   font-size: 13pt;
+}
+
+.button-green {
   background-color: #2ecc71;
   transition: background-color 0.3s;
 }
 
-.button:hover,
-.button:focus {
+.button-green:hover,
+.button-green:focus {
   background-color: #27ae60;
+}
+
+.button-red {
+  background-color: #cc2e3a;
+  transition: background-color 0.3s;
+}
+
+.button-red:hover,
+.button-red:focus {
+  background-color: #ae2732;
 }
