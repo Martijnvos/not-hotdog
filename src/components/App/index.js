@@ -17,12 +17,12 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <div id="app-container">
         <Gallery />
         <CategorizationButtons />
         {/* TODO: send over the amount that is categorized */}
         <InformativeText />
-      </>
+      </div>
     );
   }
 }
