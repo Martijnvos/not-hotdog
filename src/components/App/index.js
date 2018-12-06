@@ -13,7 +13,11 @@ class App extends Component {
 
   // TODO: implement updating the amount of categorized items
   // This should update the InformativeText component
-  updateCategorizedAmount = () => {};
+  updateCategorizedAmount = () => {
+    this.setState(state => ({
+      amountCategorized: state.amountCategorized + 1
+    }));
+  };
 
   render() {
     return (
@@ -21,7 +25,7 @@ class App extends Component {
         <Gallery />
         <CategorizationButtons />
         {/* TODO: send over the amount that is categorized */}
-        <InformativeText />
+        <InformativeText amountCategorized={this.state.amountCategorized} />
       </div>
     );
   }
