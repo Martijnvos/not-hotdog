@@ -6,6 +6,7 @@ import CategorizationButtons from "../CategorizationButtons";
 import InformativeText from "../InformativeText";
 
 class App extends Component {
+  // Set the default state
   state = {
     amountCategorized: 0
   };
