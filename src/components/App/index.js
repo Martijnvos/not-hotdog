@@ -21,7 +21,9 @@ class App extends Component {
     return (
       <div id="app-container">
         <Gallery />
-        <CategorizationButtons />
+        <CategorizationButtons
+          updateCategorizedAmount={this.updateCategorizedAmount}
+        />
         <InformativeText amountCategorized={this.state.amountCategorized} />
       </div>
     );

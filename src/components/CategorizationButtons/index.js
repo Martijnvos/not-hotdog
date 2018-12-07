@@ -1,13 +1,20 @@
 import React from "react";
 import "./CategorizationButtons.css";
 
-const CategorizationButtons = () => (
+const CategorizationButtons = ({ updateCategorizedAmount }) => (
   <div className="button-container">
-    {/* TODO: make the buttons categorize the shown image when clicked */}
-    <button type="button" className="button button-red">
+    <button
+      type="button"
+      className="button button-red"
+      onClick={updateCategorizedAmount}
+    >
       Not hotdog
     </button>
-    <button type="button" className="button button-green">
+    <button
+      type="button"
+      className="button button-green"
+      onClick={updateCategorizedAmount}
+    >
       Hotdog
     </button>
   </div>
