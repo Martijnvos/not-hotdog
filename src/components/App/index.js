@@ -5,6 +5,8 @@ import Gallery from "../Gallery";
 import CategorizationButtons from "../CategorizationButtons";
 import InformativeText from "../InformativeText";
 
+// HINT: in order to make use of random images you need to import something here ;)
+
 class App extends Component {
   // Set the default state
   state = {
