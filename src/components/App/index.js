@@ -16,13 +16,13 @@ class App extends Component {
   // Load in a random image when the component is mounted
   // This will run on page load and makes sure the gallery gets populated
   componentDidMount() {
-    const image = getRandomImage();
-    this.loadNextImage(image);
+    this.loadNextImage();
   }
 
-  // Sets the supplied random image to the state as the current image to be displayed
-  loadNextImage = nextImage => {
-    this.setState({ currentImage: nextImage });
+  // Gets a random image and saves it to state as the current image to be displayed
+  loadNextImage = () => {
+    const image = getRandomImage();
+    this.setState({ currentImage: image });
   };
 
   updateCategorizedAmount = () => {
