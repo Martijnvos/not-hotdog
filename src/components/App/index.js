@@ -25,19 +25,24 @@ class App extends Component {
     this.setState({ currentImage: image });
   };
 
-  updateCategorizedAmount = () => {
+  onImageCategorize = () => {
+    // Increment the amount that's been categorized by 1
     this.setState(state => ({
       amountCategorized: state.amountCategorized + 1
     }));
+
+    // Load new image to categorize
+    this.loadNextImage();
   };
 
   render() {
     return (
       <div id="app-container">
+        {/* Render the gallery */}
         <Gallery currentImage={this.state.currentImage} />
-        <CategorizationButtons
-          updateCategorizedAmount={this.updateCategorizedAmount}
-        />
+        {/* Render the buttons with which you can categorize */}
+        <CategorizationButtons onImageCategorize={this.onImageCategorize} />
+        {/* Render the informative text showing how much image you have categorized */}
         <InformativeText amountCategorized={this.state.amountCategorized} />
       </div>
     );
