@@ -24,7 +24,6 @@ class App extends Component {
       <div id="app-container">
         <Gallery />
         <CategorizationButtons />
-        {/* TODO: send over the amount that is categorized */}
         <InformativeText amountCategorized={this.state.amountCategorized} />
       </div>
     );
