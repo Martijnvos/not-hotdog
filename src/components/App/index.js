@@ -11,8 +11,6 @@ class App extends Component {
     amountCategorized: 0
   };
 
-  // TODO: implement updating the amount of categorized items
-  // This should update the InformativeText component
   updateCategorizedAmount = () => {
     this.setState(state => ({
       amountCategorized: state.amountCategorized + 1
